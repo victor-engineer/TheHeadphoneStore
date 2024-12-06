@@ -102,3 +102,5 @@ function addToCart() {
 
 // Inicializa o catálogo com o primeiro produto
 updateProductDisplay();
+
+
