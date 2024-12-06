@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- or -->
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Fones de Ouvidos</title>
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo"><i class='bx bx-headphone'></i>Soundbox</a>
+
+        <ul class="navegação">
+            <li><a href="#">Visão geral</a></li>
+            <li><a href="#">Teach Specs</a></li>
+            <li><a href="#">Reviews</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul><!--navegação-->
+
+        <div class="header-icons">
+            <i class='bx bx-cart'></i>
+            <div id="menu"><i class='bx bx-menu'></i></div>
+        </div><!--header-icons-->
+    </header>
+
+    <section class="home">
+        <div class="home-img">
+            <img src="product1.png" class="one">
+        </div><!--home-img-->
+
+        <div class="home-text">
+
+            <h1>Wireless <br> Headphones</h1>
+            <h5>The smarter way to listen</h5>
+            <h3>$199.00</h3>
+            <a href="#" class="btn">Shop Now</a>
+            
+        </div><!--home-text-->
+    </section><!--home-->
+
+
+    <div class="main">
+        <div class="row">
+            <li><img src="main1.png" onclick="slider('product1.png')"></li>
+        </div><!--row-->
+
+        <div class="row2">
+            <li><img src="main2.png" onclick="slider('product2.png')"></li>
+        </div><!--row2-->
+
+        <div class="row3">
+            <li><img src="main3.png" onclick="slider('product3.png')"></li>
+        </div><!--row3-->
+    </div><!--main-->
+
+    <section class="register">
+        <h2>Cadastre-se para aproveitar nossos benefícios</h2>
+        <form action="#" method="post" class="complex-form">
+            <!-- Dados pessoais -->
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <div class="form-group">
+                    <label for="name">Nome Completo:</label>
+                    <input type="text" id="name" name="name" placeholder="Digite seu nome completo" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Telefone:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="(XX) XXXXX-XXXX" required>
+                </div>
+            </fieldset>
+    
+            <!-- Endereço -->
+            <fieldset>
+                <legend>Endereço</legend>
+                <div class="form-group">
+                    <label for="street">Rua:</label>
+                    <input type="text" id="street" name="street" placeholder="Nome da rua" required>
+                </div>
+                <div class="form-group">
+                    <label for="number">Número:</label>
+                    <input type="text" id="number" name="number" placeholder="Número da residência" required>
+                </div>
+                <div class="form-group">
+                    <label for="city">Cidade:</label>
+                    <input type="text" id="city" name="city" placeholder="Cidade" required>
+                </div>
+                <div class="form-group">
+                    <label for="state">Estado:</label>
+                    <select id="state" name="state" required>
+                        <option value="" disabled selected>Selecione seu estado</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="BA">Bahia</option>
+                        <!-- Adicione outros estados aqui -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="zipcode">CEP:</label>
+                    <input type="text" id="zipcode" name="zipcode" placeholder="XXXXX-XXX" required>
+                </div>
+            </fieldset>
+    
+            <!-- Outros detalhes -->
+            <fieldset>
+                <legend>Informações Adicionais</legend>
+                <div class="form-group">
+                    <label for="dob">Data de Nascimento:</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+                <div class="form-group">
+                    <label for="gender">Gênero:</label>
+                    <select id="gender" name="gender" required>
+                        <option value="" disabled selected>Selecione seu gênero</option>
+                        <option value="male">Masculino</option>
+                        <option value="female">Feminino</option>
+                        <option value="other">Outro</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" name="password" placeholder="Crie uma senha" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Confirme a Senha:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirme sua senha" required>
+                </div>
+            </fieldset>
+    
+            <!-- Termos e condições -->
+            <div class="form-group">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">Eu aceito os <a href="#">termos e condições</a>.</label>
+            </div>
+    
+            <!-- Botão de envio -->
+            <div class="form-group">
+                <button type="submit" class="btn">Cadastrar</button>
+            </div>
+        </form>
+    </section>
+
+    <section class="catalog">
+        <h2>Catálogo de Produtos</h2>
+        <p>Escolha seus produtos favoritos e adicione ao carrinho!</p>
+    
+        <div class="catalog-container">
+            <div class="product-display">
+                <img id="product-image" src="product1.png" alt="Produto">
+                <div class="product-details">
+                    <h3 id="product-name">Fone de Ouvido Wireless</h3>
+                    <p id="product-price" class="product-price">$199.00</p>
+                    <button class="btn add-to-cart" onclick="addToCart()">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+            <button class="btn next-product" onclick="nextProduct()">Próximo Produto</button>
+        </div>
+    </section>
+    
+
+    <section class="contact">
+        <h2>Entre em Contato</h2>
+        <p>Estamos aqui para ajudar. Entre em contato conosco para tirar dúvidas, compartilhar feedback ou simplesmente dizer olá!</p>
+    
+        <div class="contact-container">
+            <!-- Informações de contato -->
+            <div class="contact-info">
+                <h3>Informações</h3>
+                <div class="info-box">
+                    <i class='bx bx-phone'></i>
+                    <div>
+                        <h4>Telefone</h4>
+                        <p>(11) 99999-9999</p>
+                    </div>
+                </div>
+                <div class="info-box">
+                    <i class='bx bx-envelope'></i>
+                    <div>
+                        <h4>Email</h4>
+                        <p>contato@soundbox.com</p>
+                    </div>
+                </div>
+                <div class="info-box">
+                    <i class='bx bx-map'></i>
+                    <div>
+                        <h4>Endereço</h4>
+                        <p>Rua dos Sons, 123, São Paulo - SP</p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Formulário de contato -->
+            <div class="contact-form">
+                <h3>Envie uma Mensagem</h3>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="contact-name">Nome:</label>
+                        <input type="text" id="contact-name" name="contact-name" placeholder="Seu nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-email">Email:</label>
+                        <input type="email" id="contact-email" name="contact-email" placeholder="Seu email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-message">Mensagem:</label>
+                        <textarea id="contact-message" name="contact-message" rows="5" placeholder="Escreva sua mensagem aqui..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="cart">
+        <h2>Seu Carrinho</h2>
+        <p>Revise os itens antes de finalizar a compra.</p>
+    
+        <div class="cart-container">
+            <!-- Produtos no carrinho -->
+            <div class="cart-items">
+                <!-- Item 1 -->
+                <div class="cart-item">
+                    <img src="product1.png" alt="Produto 1">
+                    <div class="item-details">
+                        <h3>Fone de Ouvido Wireless</h3>
+                        <p class="item-price">$199.00</p>
+                        <div class="quantity-control">
+                            <button onclick="updateQuantity(this, -1)">-</button>
+                            <span class="quantity">1</span>
+                            <button onclick="updateQuantity(this, 1)">+</button>
+                        </div>
+                    </div>
+                    <button class="remove-item" onclick="removeItem(this)"><i class='bx bx-trash'></i></button>
+                </div>
+    
+                <!-- Item 2 -->
+                <div class="cart-item">
+                    <img src="product2.png" alt="Produto 2">
+                    <div class="item-details">
+                        <h3>Fone com Cancelamento de Ruído</h3>
+                        <p class="item-price">$249.00</p>
+                        <div class="quantity-control">
+                            <button onclick="updateQuantity(this, -1)">-</button>
+                            <span class="quantity">1</span>
+                            <button onclick="updateQuantity(this, 1)">+</button>
+                        </div>
+                    </div>
+                    <button class="remove-item" onclick="removeItem(this)"><i class='bx bx-trash'></i></button>
+                </div>
+            </div>
+    
+            <!-- Resumo do carrinho -->
+            <div class="cart-summary">
+                <h3>Resumo</h3>
+                <div class="summary-item">
+                    <p>Subtotal:</p>
+                    <p id="subtotal">$448.00</p>
+                </div>
+                <div class="summary-item">
+                    <p>Frete:</p>
+                    <p>$15.00</p>
+                </div>
+                <div class="summary-item total">
+                    <p>Total:</p>
+                    <p id="total">$463.00</p>
+                </div>
+                <button class="btn checkout-btn">Finalizar Compra</button>
+            </div>
+        </div>
+    </section>
+    
+
+
+     
+  
+    <script>
+        function slider (anything){
+            document.querySelector ('.one') .src = anything;
+        };
+
+       let menu = document.querySelector ('#menu-icon');
+       let navbar = document.querySelector ('.navbar');
+
+       menu.onclick = () => {
+        menu.classList.toggle ('bx-x');
+        navbar.classList.toggle ('open');
+       }
+    </script>
+    
+</body>
+</html>
